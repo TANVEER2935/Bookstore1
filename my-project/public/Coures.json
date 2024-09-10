@@ -1,0 +1,104 @@
+
+     [
+      {
+        "id": "CS101",
+        "sub_code": "CS",
+        "name": "Introduction to Computer Science",
+        "price": 199.99,
+        "time": "10:00 AM - 11:30 AM",
+        "img": "cs.jpeg",
+        "description": "An introductory course in computer science covering fundamental concepts and basic programming skills."
+      },
+      {
+        "id": "MATH201",
+        "sub_code": "MATH",
+        "name": "Calculus I",
+        "price": 149.99,
+        "time": "1:00 PM - 2:30 PM",
+        "img": "Maths.jpeg",
+        "description": "A foundational course in calculus covering limits, derivatives, and integrals."
+      },
+      {
+        "id": "ENG301",
+        "sub_code": "ENG",
+        "name": "English Literature",
+        "price": 129.99,
+        "time": "3:00 PM - 4:30 PM",
+        "img": "english.jpeg",
+        "description": "An exploration of major works and authors in English literature from various periods."
+      },
+      {
+        "id": "BIO101",
+        "sub_code": "BIO",
+        "name": "Introduction to Biology",
+        "price": 179.99,
+        "time": "9:00 AM - 10:30 AM",
+        "img": "bio.jpeg",
+        "description": "A basic course covering key concepts in biology, including cell structure, genetics, and ecology."
+      },
+      {
+        "id": "PHIL102",
+        "sub_code": "PHIL",
+        "name": "Introduction to Philosophy",
+        "price": 139.99,
+        "time": "2:00 PM - 3:30 PM",
+        "img": "[hilo.jpeg",
+        "description": "An overview of major philosophical ideas and thinkers from ancient to modern times."
+      },
+      {
+        "id": "CHEM104",
+        "sub_code": "CHEM",
+        "name": "General Chemistry",
+        "price": 189.99,
+        "time": "11:00 AM - 12:30 PM",
+        "img": "chem.jpeg",
+        "description": "A comprehensive introduction to chemical principles including reactions, stoichiometry, and thermodynamics."
+      },
+      {
+        "id": "HIST205",
+        "sub_code": "HIST",
+        "name": "World History",
+        "price": 159.99,
+        "time": "4:00 PM - 5:30 PM",
+        "img": "wh.jpeg",
+        "description": "A survey of major historical events and developments from ancient to modern times."
+      },
+      {
+        "id": "ART107",
+        "sub_code": "ART",
+        "name": "Art History",
+        "price": 119.99,
+        "time": "6:00 PM - 7:30 PM",
+        "img": "at.jpeg",
+        "description": "An exploration of art movements and styles throughout history, from classical to contemporary."
+      },
+      {
+        "id": "ECON303",
+        "sub_code": "ECON",
+        "name": "Microeconomics",
+        "price": 169.99,
+        "time": "8:00 AM - 9:30 AM",
+        "img": "mc.jpeg",
+        "description": "A study of individual and firm behavior in the market, including supply and demand analysis."
+      },
+      {
+        "id": "PSY104",
+        "sub_code": "PSY",
+        "name": "Introduction to Psychology",
+        "price": 149.99,
+        "time": "12:00 PM - 1:30 PM",
+        "img": "py.jpeg",
+        "description": "An overview of psychological theories, research methods, and applications in human behavior."
+      },
+      {
+        "id": "STAT202",
+        "sub_code": "STAT",
+        "name": "Statistics for Business",
+        "price": 159.99,
+        "time": "5:00 PM - 6:30 PM",
+        "img": "bs.jpeg",
+        "description": "An introduction to statistical methods and their application in business decision-making."
+      }
+    ]
+  
+  
