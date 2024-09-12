@@ -4,7 +4,7 @@ export default function Coures1({item}) {
   return (
     <div className="card bg-base-100 w-85 h-95 shadow-xl bg-black mb-10 ml-10 hover:scale-105 duration-200">
   <figure>
-    <img
+    <img className='aspect-square'
       src={item.img}
       alt="Shoes" />
   </figure>

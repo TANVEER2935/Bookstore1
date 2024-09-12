@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import toast from 'react-hot-toast';
 export default function Singup() {
   const {
     register,
@@ -10,8 +12,22 @@ export default function Singup() {
   } = useForm()
   const navigate = useNavigate();
 
-  const onSubmit = (data) => {
-    console.log(data)
+  const onSubmit = async(data) => {
+    const info={
+      name:data.first_name,
+      email:data.email,
+      password:data.password
+    }
+    console.log(data);
+    await axios.post("http://localhost:4000/user",info).
+    then((res)=>{
+      if(res.data){
+        toast.success('Successfully created!');
+      }
+      console.log(res.data);
+    }).catch((err)=>{
+      toast.error('This is an error!');
+    })
     navigate('/'); 
     // Handle signup logic here
   }

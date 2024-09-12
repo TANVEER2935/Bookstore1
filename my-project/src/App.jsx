@@ -3,6 +3,7 @@ import Home from './screens/Home'
 import Course from './Component/Course'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import Singup from './Component/Singup';
+import toast, { Toaster } from 'react-hot-toast';
 export default function App() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function App() {
         <Route exact path='/signup' element={<Singup/>}></Route>
     </Routes>
     </BrowserRouter>
+    <Toaster/>
    </>
   )
 }

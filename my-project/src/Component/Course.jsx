@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import Coures1 from './Coures1'
-import list from '../../public/Coures.json';
+import axios from 'axios'
 import { Link } from 'react-router-dom';
 export default function Course() {
+  const[course,setcourse]=useState([]);
+  useEffect(()=>{
+    const getcourse=async()=>{
+      try{const res=await axios.get("http://localhost:4000/course");
+        console.log(res.data);
+        setcourse(res.data);
+      }
+      catch(err){
+        console.log(err);
+      }
+      };
+      getcourse();
+  },[])
   return (
     <div>
       <Navbar/>
@@ -16,7 +29,7 @@ export default function Course() {
         <hr className='mt-3'/>
       </div>
       <div className='grid grid-cols-3 gap-4 mt-8'>
-      {list.map((item)=>(
+      {course.map((item)=>(
         <Coures1 item={item} key={item.id}/>
        ))}
       </div>

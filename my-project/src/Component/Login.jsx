@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios';
+import toast from 'react-hot-toast';
 export default function Login() {
   const {
     register,
@@ -10,8 +12,22 @@ export default function Login() {
   } = useForm()
   const navigate = useNavigate();
 
-  const onSubmit = (data) => {
+  const onSubmit = async(data) => {
     console.log(data)
+    const info={
+      email:data.email,
+      password:data.password
+    }
+    await axios.post("http://localhost:4000/login",info).
+    then((res)=>{
+      if(res.data){
+        toast.success('Successfully created!');
+      }
+      console.log(res.data);
+    }).catch((err)=>{
+      toast.error('This is an error!');
+      console.log(err)
+    })
     navigate('/')
     // Handle login logic here
   }
